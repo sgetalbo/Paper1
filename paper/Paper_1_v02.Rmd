@@ -1,0 +1,129 @@
+---
+title: "Using Energy Smart Meter Data and Socio-Demographic Indicators to Understand Consumption in Relation to Deprivation Levels"
+author: "Ellen Talbot"
+date: "04/05/2018"
+output:
+  word_document: default
+  html_document: default
+bibliography: library.bib
+---
+
+## Abbreviations
+
+CDRC – Consumer Data Research Centre   
+DEP – Domestic Energy Provider   
+PCS – Postcode Sector (e.g. OL9 0)   
+SM – Smart Meter   
+
+# Abstract
+To do.
+
+# Domestic energy consumption in a UK context 
+
+The UK continues to see domestic energy usage levels increase as an overall percentage of the countries consumption. In 2016, it accounted for 29% of overall usage - a decrease from previous years 35% in 2013 - but higher than the EU average which stood at 25.45% [@eurostatcom]. These fluctuations are part of a larger upward trend overall, which has seen domestic energy consumption increase markedly from the 1970s by 12%, with short term fluctuations being accounted for by the effect of mean air temperature year on year [@beiscom https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/633503/ECUK_2017.pdf].
+
+Previous research has shown that a series of socio-demographic attributes influence the extent to which energy usage can be understood in the context of derpivation levels, including income, housing tenure and number of appliances. Indeed other research also covers factors such as dwelling characteristics and psychological and behavioural factors behind consumption patterns, which whilst important, are beyond the scope of this paper. Spatial variations have also previously been examined, but largely in reference to weather and temperature impacting upon consumption. 
+
+Primarily in response to concerns over reaching the targets laid out in the 2008 climate change act, central policy measures have been introduced to support and encourage reductions in energy usage, particularly in the domestic setting. Smart Meters are high on the UK government's energy efficiency agenda in order to align with those proposed targets. The UK government set goals of a 29% decrease in the domestic category [@HMGovernment2009] and for the transition to smart metering to be complete for both gas and electriciy by 2020 [@Haben]. With a top - down outlook, by upgrading the UK infrastructure to a 'Smart Grid' there is the potential for "solving a lot of our energy problems" [@smartgridcom; @Stern2011].Smart meters enable the smart grid by providing real-time data on the consumption of energy [@smartgridcom; @guerreiro2015making], therfore it will improve reliability, better match supply and demand and allow more efficient planning for both short and long term future; by being more secure, planning ahead for unexpected power outages and informing the number of power stations the UK is likely to need in the future. 
+
+Given the establishment of these targets, there is an operational setting in which Domestic Energy Providers (DEPs) are under increasing pressure to ensure their customers are on the most efficient and affordable tariffs, driving a demand for smart meter installations and bringing an end to pre-paid meters and estimated bills, which are often far more expensive than actual bills, but are also the most likely tariffs to be held by those in or near fuel poverty. These personalised tariffs will enable the DEPs to offer access to cheap energy when demand is at its lowest.
+
+Energy meters have been an essential but modest element of the infrastructure in UK households since the early 20th century - firstly gas, and then with the invention of alternating current, electricity - both being produced on a large, saleable scale. By the turn of the century many improvements had been made to the original model inside peoples homes; reductions in weight and dimension and improving longterm stability. These induction meters are still widely produced today in their modern form, and are popular due to their low production price and excellent reliability [@meteringcom]. Yet for those reasons mentioned above, they are falling out of favour with policy makers, energy providers and consumers as they all look for a more efficient and affordable way to monitor energy consumption.  
+
+As such, the overarching aim of this paper is twofold; to address our ability to understand aggregate patterns of domestic energy consumption, specifically by exploring the representativeness and spatio-temporal signatures of aggregate residential energy consumption as recorded by a national extract of smart meter data provided by one of the 5 largest energy providers in the UK; and secondly, to evaluate the socio-demographic determinants of recorded energy consumption; and their relationship to fuel poverty. This analysis capitalises on data provided to the Consumer Data Research Centre (CDRC) by the DEP for the financial year 2015 - 16 across the UK. To the authors knowledge this is the first dataset of it's kind to be analysed at the half hourly cadence and the first energy study in the UK to take both gas and electricity data in tandem and in such detail.
+
+# Energy, Monitoring and Consumer Behaviour
+
+Of the literature reveiwed there was a clear disparity in the meaning of the word 'energy'. Of the titles which included the words 'smart meter', 'energy' or 'electricity', many focus explicitly on electricity and feature it in the title, [@Jones2015; @mcloughlin2015clustering; @ardakanian2014computing; @viegas2016classification; @Rhodes2014; @Kavousian2013; @Huebner2016] while some use 'energy' as a reference to only electricity [@hargreaves2013keeping; @kwac2013utility; @haben2016analysis; @parra2016customers]. The only authors to take 'energy' to mean both gas and electricity were @Huebner2015, @Druckman2008, @Wyatt2013 and @Brounen2012 - but sample sizes were significantly smaller than in our study. This is often the case in energy studies, and of all those reviewed, the largest sample of housing was @Brounen2012 with 300,000 Dutch homes. As far as the authors can establish, there are not yet any known studies with a focus purely on gas consumption and smart meters. 
+
+Our literature review was undertaken to establish those factors previously identified as having an effect on energy consumption in a domestic setting was used to influence the framework of the current study. Time and again the existing literature looks at demographic predictors of energy behaviour. @Frederiks2015, [pp576] provide a thorough review of this literature, arguing that despite many inconsistencies within the framework, there is now general agreement that “several broad yet interrelated categories of variables may explain individual differences in household energy use”. These explanatory variables encompass three main fields; socio-demographic (e.g., income, education, household size, dwelling type and tenure), psychological factors (e.g., knowledge, values, attitudes) and external factors (e.g., economics, political and legal). This research is focused soley on the socio-demographic aspects.
+
+Overwhelmingly, the literature pinpoints household income as the most positively related socio-demographic variable in regards to domestic energy consumption [Abrahamse2011; Rhodes2014; Jones2015; Druckman2008]. Yet, a study by @Kavousian2013 found that there was neither a positive or negative relationship between income and energy consumption, suggesting interplay between that and external factors such as the weather conditions and location as more influential. 
+
+Income is intrinsically linked to other factors such as employment status, education and household size, all of which may facilitate or constrain energy related behaviours. As an example; those in full time employment (and therefore have a higher income) are more likely to spend less time at home than the retired and unemployed, but they are also more likely to own and use more electrical appliances than lower income households [@@Gatersleben2002; Holloway2006]. Employment status can be used as a proxy for household income but there is only limited evidence to show how it indirectly affects energy consumption [@Frederiks2015].
+
+The literature also suggest tenure as a highly influential variable on energy consumption, if only indirectly. @Sardianou2007 argues that because tenants in privately rented accommodation are constrained, they are the least likely to undertake energy conservation home improvements as they will see very little return on their investment. Likewise, private landlords are often unwilling to invest because they are not responsible for the bills. Home-owners are more likely to invest in energy conservation as they are less transient, have greater financial security and receive greater return on energy efficiency investments in the long term [@Frederiks2015]. However, @Jones2015, found that households had the same likelihood of being high consumers irrespective of mode of tenure. Other earlier studies have also concluded that tenure type has no significant effect on electricity use, again suggesting relationships between that and other external variables [@Kavousian2013; @Bedir2013; @Leahy2010; @Tso2007].
+
+Some studies take particular interest in the number of appliances in a household, which may be indicative of a families life cycle - but sample sizes are small and generally only one survey is done for the explicit puropse of the study [@mcloughlin2015clustering; viegas2016classification; Rhodes2014; weiss2012leveraging; @Leahy2010]. 
+
+Characteristics associated with the dwelling itself have also been linked to occupant’s variations in energy consumption. Dwelling age, type and size are influential, as is the existing equipment within the dwelling. The number of features such as floors, room and windows as well as the installation of insulation and efficient heating all contribute [@VanRaaij1983; Jones2015]. @Schipper1989 suggest that up to half of total household energy use depends on these characteristics. 
+
+# The impact of ever increasing energy consumption and the growing need for energy efficiency.
+
+On the international scale, the increased release of greenhouse gases into the atmosphere has caused an rise in global temperatures of 0.8&deg;C  since 1880 - but two thirds of this warming has occured since 1975 [@Observatory]. According to the IEA (International Energy Association), energy efficiency can contribute up to 49% of the energy related CO2 emission reductions that are nedded to limit global temperature increases to less than 2&deg;C by 2050. "Energy efficiency, including energy conversation, is a long-term priority for G20 members, as it constitures the optimum utilisation of energy resources" [G20 https://ec.europa.eu/energy/sites/ener/files/documents/G20%20Energy%20Efficiency%20Leading%20Programme.pdf] (pp.4). G20 members account for over 80% of both global energy consumption and greenhouse gases but have proven experience in "energy efficiency measures and in achieving energy reductions". From 1990 to 2013,the G20s total energy consumption savings reached about 4.3 billion TOE (define TOE) and about 10.4 billion tonnes of carbon dioxide emissions were avoided. Energy efficiency is one of the most important mechanisms through which countries can act to mitigate climate change in the short to long term.   
+
+
+At the EU scale, the UK is one of the worst offenders for domestic energy consumption; the EU average was 25.4% of final energy consumption in 2016 [@eurostat] whereas the UK sat at 29% in 2015. This could however, possibly be explained by the relative age of the UK housing stock in comparision to the rest of the EU, with many houses dating from the Victorian era. As a result, many houses are poorly insulated and ultimately consume more to maintain a given level of comfort [@beiscom]. The Euro 2020 energy strategy stipulates that all countries must aim to reduce greenhouse gas emissions by 20% and to make a 20% improvement in energy efficiency. The current strategy is unlikely to achieve these targets, but the report pin points smart meters and power grids as the key to full exploitation of the potential for energy savings [@eu2020 http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52010DC0639&from=EN]. [@eurostat http://ec.europa.eu/eurostat/statistics-explained/index.php/Energy_consumption_in_households], 
+
+Increased demand in energy globally and continentally leads to a real price increase for domestic consumers in the UK. The average household spend on fuel has risen from X in X to X in X. As discussed, the UK has set targets in terms of a reduction in consumption and emissions, but has also commited to reducing the number of people who find themselves in fuel poverty because of these increased prices. Fuel poverty is a pertinent issue in the UK as the gap widens and people who have both a low income and high fuel costs find themselves deeper into fuel poverty as prices continue to rise well over and above rates of inflation. 
+
+# The representativeness of smart meter data 
+
+The data provided by the DEP spanned 12 months and gave both gas and electricity meter readings at a half hourly cadence. Data cleaning and preparation steps were taken to ensure usability and accurancy in the later analysis; an essential step in order to avoid influencing the results with atypical values [@ramos2008data]. Table 1 visualises this data cleaning process, which also acted as a data minimisation method, in order to make the analysis less time and computationally expensive [@Jiawei2012].
+
+TABLE 1 
+
+It was imperative to understand the underlying characteristics of this innovative dataset as a whole [@lavin2016clustering]. Data was analysed before the aggregation took place to explore the spatiality of Smart Meter distribution and Figure 1 shows the penetration of smart meters as a percentage of total houses in each postcode sector. The North West and Midlands are the most prevalent area, while the Scottish Highlands are particularly sparse. This does suggest that there are some urban/rural variations in either the ease of installation or availability of the smart meter infrastructure into homes. Nowhere at the time of this data collection in the UK has higher than 16% of homes with a smart meter (whose energy is provided by this particular DEP). It is also relevant to consider the size and spread of this particular DEPs customer base; it may be the case that there are smart meters provied by other DEPs in areas which look sparse here. 
+
+FIGURE 1 - previously FIG 4. 
+
+It is also important to consider that the roll out of smart meters is still several years away from completion and there are no strict rules on the way these are distributed by the DEP. Currently they are given to those people who are at home when a representative calls at the house, which has an influence on the demographic of the people who are included in the data. To better understand this roll-out process and the spatial correlation within the dataset, a LISA (local indices of spatial correlation) was done, which determined that the penetration data was spatially correlated, as shown in Figure 2. There is an clear north south divide, and whilst any reasoning for this would be purely speculative, it is true to say that in the North of the UK, high penetration areas are much more likely to be surrounded by high penetration areas, whereas in the South of the UK the exact opposite is true, with the pattern being especially prominent along the southern coastlines. A global morans I statistics statistic had a positive value of 4.98, significant to 0.05, suggesting that these patterns have not occured randomly.
+
+FIGURE 2 - previously FIG 5 
+
+# Measuring energy usage of small areas
+
+The overall trend in the data showed that the number od smart meters increased incrementally over the 12 month period, with slightly more electricity smart meters overall than gas. Overall usage for the entire dataset at a diurnal granularity is presented in Figure 3, showing that as a whole, energy usage peaks during the evening at around 19:30 - when typically most members of the family are at home - therefore most appliances, heating and lighting are likely to be in use. It drops off very quickly after 9pm, most likely because as people go to bed for the night they make the most effort to turn off appliances and not use energy unnecessarily. This overnight rate is sometimes known as the ‘standby rate’ or ‘vampire power’ (Wyatt 2013).
+
+FIGURE 3 - previously FIG 1 
+
+There is also a clear AM peak between 07:30 and 08:00, confirming that energy usage increases as people begin their daily tasks, but dips off again as people go out to work. The lowest energy usage occurs between the hours of 01:00 and 04:30, but does not go as low as zero because of the ‘standby’ rate of energy usage, where only those appliances which are not switched off such as the fridge freezer or central heating are consuming energy (Wyatt 2013). The fact that energy usage does not dip this low at any other time of the day indicates that in some cases energy is consumed throughout the day because people are at home through illness, unemployement, caring duties or shift work. 
+
+Figures 4 and 5 display energy usage at higher temporal granularities and shows both weekly and seasonal variations; lower energy usage during the typical working week and high usage at weekends when people tend to be at home, and very high usage in the winter months when heating requirements are much greater than in the summer. This is also likely to reflect shorter hours of darkness resulting in less lighting being used during the summer months, and other energy saving measures such as the ability to dry clothes outside in warmer weather.
+
+FIGURES 4 and 5 - previously figures 2 and 3
+
+# Calculating characteristics of energy users 
+
+Once overall characteristics were understood, total energy usage was calculated and appended to the OAC categorisation to understand if households area classification has an effect on their energy usage patterns. Figure 6 shows this relationship.
+
+FIGURE 6 - previously fig 6 
+
+The most interesting patterns occur in the highest and lowest usage values. Group 5a; The urban professionals and families use the most energy overall. The pen portrait for this group as provided by the Office for National Statistics states that;  
+
+“The population of this group shows a noticeably higher proportion of children aged 0 to 14 than the parent supergroup and a lower proportion aged 90 and over. There is also a higher proportion of people with mixed ethnicity. Households in this group are more likely to live in terraced properties and to live in privately rented accommodation. Unemployment is slightly higher than for the parent supergroup.”
+
+This suggests that family size and having children living at home is linked to energy usage. It also suggests that energy usage is higher due to being at home consistently during the day through unemployment and child care duties. It may also back up the literature that states that privately rented accommodation are the most likely to use the greatest amounts of energy due to them being comparatively poorly insulated and energy efficient, as landlords know they will see little return on this kind of investment when tenants are typically responsible for the utility bills. The tenants are also unwilling to make improvements of this nature as they are also unlikely to see any long-term benefit from investment on a house they do not own. It is agreed in the IEA energy strategy that the disconnect between divided incentives for owners and tenants needs to be addressed for energy efficiency to improve [eu2020]. 
+
+Another group worthy of noting is Group 1b; Rural tenants, whose pen portrait reads:
+
+“The age structure is very similar to the supergroup^, though people are less likely to live in communal establishments. Compared with the parent supergroup, there is a higher proportion of households living in semi-detached, terraced properties and flats, with a higher proportion socially renting. People are less likely to work in the agriculture industry than for the parent supergroup.” ^Middle aged to older and retired.
+
+Their energy usage is high overall, but also significantly higher than those within their parent supergroup. Again this can be attributed to tenure and the fact that some of these residents are retired and therefore are in their homes most of the day, but these homes may not be the most energy efficient. It may also look comparatively high to those in the other categories of the supergroup as they are less likely to live in communal housing such as retirement homes.
+
+The lowest consumption groups are also worth consideration. Group 7b: Constrained flat dwellers have the lowest energy usage of any group. Looking at the pen portrait:
+
+“This group is characterised by people living in flats, with a higher proportion living in socially rented accommodation than for the supergroup. Ethnic groups generally have a similar representation as for the supergroup, persons of mixed ethnicity are underrepresented. There is a lower proportion of households with two or more cars.”
+
+This could be for several resaons. As they are most likely to be living in flats they have overall less space to heat and lights, there are likely to be fewer people living in them to consume energy but also they are considered constrained, and fewer households have two or more cars – an indication that they are poor – and are therefore likely to be frugal and less wasteful with their energy for economic reasons.
+
+Group 3C: Ethnic Dynamics use only slightly more energy than the lowest group.
+
+“In this group non-White ethnic groups are not represented as highly as in the parent supergroup and there is a higher proportion of people born in the UK or Ireland. Households are more likely to live in a flat and to socially rent. There is a higher proportion of unemployed in the group but those in employment are more likely to work in the manufacturing industry, and to use private transport to travel to work.”
+
+This low usage can again be attributed to living in smaller accommodation, but it is possible that they use slightly more as some are unemployed and therefore more likely to use energy consistently throughout the day.
+
+This exploration led to agreement that there was a definitive link between energy consumption and deprivation levels. 
+
+# Fuel poverty 
+
+According to the UK government, a house is considered to be in fuel poverty if "They have required fuel costs that are above average *and* if they were to spend that amount they would be left with a residual income below the official poverty line." It is stated that the main drivers are "household incomes, household energy efficiency and fuel prices".
+
+These official statistics corroborate the findings thus far that those in the private rented sector are the most likely to be in fuel poverty 
+
+
+To get a deeper understanding of the demographic characteristics of Smart Meter users, census data was appended to the energy usage data. This had to be reweighted from output area level to be reapportioned to postcode sector level. This was done using the postcode headcount dataset, and an output area to postcode sector lookup table for calculating proportions. (This method is preferable to the GIS method of creating a shapefile based on overlapping boundaries as this is prone to inaccuracies such as slither polygons and is computationally much more intensive).  
+
+A townsend score - a measure of relative deprivation - is made up of four census variables and has utility for understanding deprivation as it adheres most closely to the concepts of material disadvantage [@Morris1991]. These four index variables; percentage of homes with access to a car or van, percentage of homes with more than 1 person per room, percentage of homes not owner occupied and percentage of people economically active yet unemployed; are totaled and converted to a z-score [@Townsend1987]. Because this was to be used in tandem with the energy data, an original townsend score was calculated from the reweighted census variables at the PCS scale.
+
+A daily temporal profile was calculated showing total energy usage per day; these were combined with the PCS townsend scores and accomodation types and a linear regression model ran.  The total daily usage was used in the final model 
