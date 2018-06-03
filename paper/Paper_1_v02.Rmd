@@ -68,14 +68,14 @@ It was imperative to understand the underlying characteristics of this innovativ
 
 
 ```{r SM_PROP, echo=FALSE, fig.cap="Smart Meter Penetration in the UK", out.width = '100%'}
-knitr::include_graphics('SM_PROP.jpg')
+knitr::include_graphics('images/SM_PROP.jpg')
 ```
 
 
 It is also important to consider that the roll out of smart meters is still several years away from completion and there are no strict rules on the way these are distributed by the DEP. Currently they are given to those people who are at home when a representative calls at the house, which has an influence on the demographic of the people who are included in the data. To better understand this roll-out process and the spatial correlation within the dataset, a LISA (local indices of spatial correlation) was done, which determined that the penetration data was spatially correlated, as shown in Figure 2. There is an clear north south divide, and whilst any reasoning for this would be purely speculative, it is true to say that in the North of the UK, high penetration areas are much more likely to be surrounded by high penetration areas, whereas in the South of the UK the exact opposite is true, with the pattern being especially prominent along the southern coastlines. A global morans I statistics statistic had a positive value of 4.98, significant to 0.05, suggesting that these patterns have not occured randomly.
 
 ```{r LISA, echo=FALSE, fig.cap="Local Morans I", out.width = '100%'}
-knitr::include_graphics("Local_morans_I.jpg")
+knitr::include_graphics("images/Local_morans_I.jpg")
 ```
 
 # Measuring energy usage of small areas
@@ -83,18 +83,18 @@ knitr::include_graphics("Local_morans_I.jpg")
 The overall trend in the data showed that the number od smart meters increased incrementally over the 12 month period, with slightly more electricity smart meters overall than gas. Overall usage for the entire dataset at a diurnal granularity is presented in Figure 3, showing that as a whole, energy usage peaks during the evening at around 19:30 - when typically most members of the family are at home - therefore most appliances, heating and lighting are likely to be in use. It drops off very quickly after 9pm, most likely because as people go to bed for the night they make the most effort to turn off appliances and not use energy unnecessarily. This overnight rate is sometimes known as the ‘standby rate’ or ‘vampire power’ (Wyatt 2013).
 
 ```{r hourly, echo=FALSE, fig.cap="Hourly rates of Total Energy Consumption", out.width = '100%'}
-knitr::include_graphics("Hourly.jpg")
+knitr::include_graphics("images/Hourly.jpg")
 ```
 There is also a clear AM peak between 07:30 and 08:00, confirming that energy usage increases as people begin their daily tasks, but dips off again as people go out to work. The lowest energy usage occurs between the hours of 01:00 and 04:30, but does not go as low as zero because of the ‘standby’ rate of energy usage, where only those appliances which are not switched off such as the fridge freezer or central heating are consuming energy (Wyatt 2013). The fact that energy usage does not dip this low at any other time of the day indicates that in some cases energy is consumed throughout the day because people are at home through illness, unemployement, caring duties or shift work. 
 
 Figures 4 and 5 display energy usage at higher temporal granularities and shows both weekly and seasonal variations; lower energy usage during the typical working week and high usage at weekends when people tend to be at home, and very high usage in the winter months when heating requirements are much greater than in the summer. This is also likely to reflect shorter hours of darkness resulting in less lighting being used during the summer months, and other energy saving measures such as the ability to dry clothes outside in warmer weather.
 
 ```{r daily, echo=FALSE, fig.cap="Daily rates of Total Energy Consumption", out.width = '100%'}
-knitr::include_graphics("Daily.jpg")
+knitr::include_graphics("images/Daily.jpg")
 ```
 
 ```{r seasonal, echo=FALSE, fig.cap="Seasonal rates of Total Energy Consumption", out.width = '100%'}
-knitr::include_graphics("Seasonal.jpg")
+knitr::include_graphics("images/Seasonal.jpg")
 ```
 
 # Calculating characteristics of energy users 
